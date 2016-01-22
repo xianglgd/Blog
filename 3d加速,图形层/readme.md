@@ -1,5 +1,5 @@
 最近发现一个特别变态的事情. 
-= =,,,,,不会言语, 之间上代码,然后说现象。
+= =,,,,,不会言语, 直接上代码,然后说现象。
 
 css
 
@@ -57,6 +57,7 @@ OK, 这三段代码，看似很平常。 没撒特别。
 
 为什么呢？？
 电脑上打开chrome 浏览器,发现下图这样。
+
 ![没有layer](https://raw.githubusercontent.com/xianglgd/Blog/master/3d%E5%8A%A0%E9%80%9F%2C%E5%9B%BE%E5%BD%A2%E5%B1%82/img/nolayer.png)
 
 囧,,,也没什么吗,滚动起来也蛮快的。
@@ -66,6 +67,7 @@ OK, 这三段代码，看似很平常。 没撒特别。
 可是，当我用chrome 模仿手机的时候,神器的事情就发生了。
 
 尼玛，，，，，怎么创建了这么多层？？ 怪不得不卡,不卡死你才怪。 
+
 ![打开chrome模仿手机](https://raw.githubusercontent.com/xianglgd/Blog/master/3d%E5%8A%A0%E9%80%9F%2C%E5%9B%BE%E5%BD%A2%E5%B1%82/img/layer.png).
 
 囧，，，，，为什么会这样？？？
@@ -96,5 +98,8 @@ OK, 这三段代码，看似很平常。 没撒特别。
 囧，，，采用第二种方法,你会发现第一个
 ```<div class='inwarp'>sssss<div>inDiv</div></div>```
 依然会有自己的层。
+并且还发现,在手机的 uc 浏览器上,两个页面滚动效果一样流畅。
+ = =,这是 chrome的问题呢,还是 chrome的问题呢,还是chrome的问题呢?
+ 
 ![http://101.200.236.138/no3d.html](https://raw.githubusercontent.com/xianglgd/Blog/master/3d%E5%8A%A0%E9%80%9F%2C%E5%9B%BE%E5%BD%A2%E5%B1%82/img/nolayercode.jpg)
 
