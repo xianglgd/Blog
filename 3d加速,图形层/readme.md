@@ -66,12 +66,12 @@ OK, 这三段代码，看似很平常。 没撒特别。
 
 可是，当我用chrome 模仿手机的时候,神器的事情就发生了。
 
-尼玛，，，，，怎么创建了这么多层？？ 怪不得不卡,不卡死你才怪。 
+尼玛，，，，，怎么创建了这么多层？？ 怪不得那么卡,不卡死你才怪。 
 
 ![打开chrome模仿手机](https://raw.githubusercontent.com/xianglgd/Blog/master/3d%E5%8A%A0%E9%80%9F%2C%E5%9B%BE%E5%BD%A2%E5%B1%82/img/layer.png).
 
 囧，，，，，为什么会这样？？？
-瞧瞧告诉你,你一个div ,overflow:auto; 里面内容过多产生滚动条后,用chrome 模拟手机, 就会发现,这个div 有一个层(layer).
+悄悄告诉你,你一个div ,overflow:auto; 里面内容过多产生滚动条后,用chrome 模拟手机, 就会发现,这个div 有一个层(layer).
 
 为何会产生层呢？？
 产生层的条件不是([(产生复合层条件)网上摘取](http://div.io/topic/1348))。
@@ -88,16 +88,18 @@ OK, 这三段代码，看似很平常。 没撒特别。
 目前来看,我们这不符合任何一条呀？？？
 
 = =,,,,,百思不得其解. 
-最好只好来解决这个问题啦。解决方法如下.
+最后找不到原因,只好先来解决这个问题啦。解决方法如下.
 
-1. ```<div>inDiv</div>``` 设置起 position:static;
+1. ```<div>inDiv</div>``` 设置 position:static;
 2. .inwarp 去掉overflow:hidden;
 3. 给 pageMain 添加一个3d转化.例如 transform: translate3d(0,0,0); (推荐使用这个,因为上面两个css属性,在布局的时候很可能使用到)
 
 然后大家可以看下,正常时的效果(采用的第二种方法)
+
 囧，，，采用第二种方法,你会发现第一个
 ```<div class='inwarp'>sssss<div>inDiv</div></div>```
 依然会有自己的层。
+
 并且还发现,在手机的 uc 浏览器上,两个页面滚动效果一样流畅。
  = =,这是 chrome的问题呢,还是 chrome的问题呢,还是chrome的问题呢?
  
